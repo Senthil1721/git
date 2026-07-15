@@ -1,14 +1,21 @@
-let a = parseInt(prompt("Enter first number:"));
-let b = parseInt(prompt("Enter second number:"));
+const readline = require("readline");
 
-let sum = a + b;
-let difference = a - b;
-let mul =a*b;
-let div=a/b;
+const rl = readline.createInterface({
+    input: process.stdin,
+    output: process.stdout
+});
 
-console.log("Addition = " + sum);
-console.log("Subtraction = " + difference);
-console.log("Multiplication = " + mul);
-console.log("Divsion = " + div);
+rl.question("Enter first number: ", (num1) => {
+    rl.question("Enter second number: ", (num2) => {
 
-alert("Addition = " + sum + "\nSubtraction = " + difference +"\mul="+mul+"div="+div);
+        let a = parseFloat(num1);
+        let b = parseFloat(num2);
+
+        console.log("Addition = " + (a + b));
+        console.log("Subtraction = " + (a - b));
+        console.log("Multiplication = " + (a * b));
+        console.log("Division = " + (a / b));
+
+        rl.close();
+    });
+});
