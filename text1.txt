@@ -1,0 +1,14 @@
+What is NoSQL?
+NoSQL (often meaning "Not Only SQL") refers to a broad class of database management systems that do not use the traditional relational model (tables with fixed rows and columns) found in systems like MySQL or Oracle.
+
+While traditional SQL databases require a strict, predefined schema before you can store data, NoSQL databases are built for flexibility. They allow you to store massive amounts of unstructured or semi-structured data, change your data structure on the fly, and scale out horizontally (adding more servers rather than upgrading a single massive server).
+
+Types of NoSQL Databases
+There are four primary categories of NoSQL databases, each designed to solve specific types of data problems:
+
+1. Key-Value Stores
+This is the simplest type of NoSQL database. Every single item in the database is stored as an attribute name (the "key") alongside its data (the "value"). It works much like a dictionary.
+
+Best for: Caching, storing user session data, and managing shopping carts.
+
+Examples: Redis, Amazon DynamoDB, Memcached.
